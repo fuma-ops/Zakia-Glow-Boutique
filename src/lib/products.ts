@@ -1,18 +1,3 @@
-import vanille from "@/assets/candle-vanille.jpg";
-import rose from "@/assets/candle-rose.jpg";
-import eucalyptus from "@/assets/candle-eucalyptus.jpg";
-import oud from "@/assets/candle-oud.jpg";
-import fleur from "@/assets/candle-fleur.jpg";
-import epices from "@/assets/candle-epices.jpg";
-import ribbedCream from "@/assets/candle-ribbed-cream.jpg";
-import twistPink from "@/assets/candle-twist-pink.jpg";
-import bubbleSage from "@/assets/candle-bubble-sage.jpg";
-import shellIvory from "@/assets/candle-shell-ivory.jpg";
-import bunnyWhite from "@/assets/candle-bunny-white.jpg";
-import knotTerracotta from "@/assets/candle-knot-terracotta.jpg";
-import roseNude from "@/assets/candle-rose-nude.jpg";
-import waveMauve from "@/assets/candle-wave-mauve.jpg";
-
 export type Product = {
   id: string;
   name: string;
@@ -34,7 +19,7 @@ export const products: Product[] = [
     description:
       "Une colonne sculpturale aux fines cannelures, coulée en cire de soja ivoire. Parfum vanille & ambre doux.",
     price: 140,
-    image: ribbedCream,
+    image: "/candle-ribbed-cream.jpg",
     collection: "Sculpture",
     notes: ["Vanille", "Ambre"],
     burnTime: "35h",
@@ -47,7 +32,7 @@ export const products: Product[] = [
     description:
       "Sculpture en torsade nouée, finition rose poudré pastel. Une pièce déco aussi belle qu’allumée qu’éteinte.",
     price: 155,
-    image: twistPink,
+    image: "/candle-twist-pink.jpg",
     collection: "Sculpture",
     notes: ["Rose", "Pivoine"],
     burnTime: "30h",
@@ -60,7 +45,7 @@ export const products: Product[] = [
     description:
       "Trois cubes géométriques empilés, vert sauge tendre. Notes fraîches d’eucalyptus et de menthe.",
     price: 145,
-    image: bubbleSage,
+    image: "/candle-bubble-sage.jpg",
     collection: "Sculpture",
     notes: ["Eucalyptus", "Menthe"],
     burnTime: "32h",
@@ -73,7 +58,7 @@ export const products: Product[] = [
     description:
       "Une coquille délicate aux pétales ondulés, ivoire crémeux. Parfum néroli & fleur d’oranger.",
     price: 120,
-    image: shellIvory,
+    image: "/candle-shell-ivory.jpg",
     collection: "Mignonne",
     notes: ["Néroli", "Fleur d’oranger"],
     burnTime: "25h",
@@ -86,7 +71,7 @@ export const products: Product[] = [
     description:
       "Adorable petit lapin sculpté avec son nœud rose. Parfait pour offrir. Notes gourmandes vanille & lait.",
     price: 130,
-    image: bunnyWhite,
+    image: "/candle-bunny-white.jpg",
     collection: "Mignonne",
     notes: ["Vanille", "Lait", "Tonka"],
     burnTime: "20h",
@@ -99,7 +84,7 @@ export const products: Product[] = [
     description:
       "Sculpture nouée terracotta vibrante. Notes boisées d’oud et d’ambre noir, signature orientale.",
     price: 150,
-    image: knotTerracotta,
+    image: "/candle-knot-terracotta.jpg",
     collection: "Sculpture",
     notes: ["Oud", "Ambre noir"],
     burnTime: "28h",
@@ -112,7 +97,7 @@ export const products: Product[] = [
     description:
       "Une rose entièrement sculptée, pétale par pétale, en nude pêche. Parfum rose de Damas & musc.",
     price: 160,
-    image: roseNude,
+    image: "/candle-rose-nude.jpg",
     collection: "Florale",
     notes: ["Rose de Damas", "Musc blanc"],
     burnTime: "30h",
@@ -125,7 +110,7 @@ export const products: Product[] = [
     description:
       "Pilier ondulé aux courbes fluides, finition mauve poudré. Notes de pivoine et bois de cèdre.",
     price: 155,
-    image: waveMauve,
+    image: "/candle-wave-mauve.jpg",
     collection: "Sculpture",
     notes: ["Pivoine", "Cèdre"],
     burnTime: "35h",
@@ -138,7 +123,7 @@ export const products: Product[] = [
     description:
       "Notre bougie classique en pot artisanal. Vanille de Madagascar et ambre doré, l’essentiel.",
     price: 110,
-    image: vanille,
+    image: "/candle-vanille.jpg",
     collection: "Signature",
     notes: ["Vanille", "Ambre", "Tonka"],
     burnTime: "40h",
@@ -151,7 +136,7 @@ export const products: Product[] = [
     description:
       "Le parfum délicat de la rose de Damas dans un pot en terracotta artisanal.",
     price: 135,
-    image: rose,
+    image: "/candle-rose.jpg",
     collection: "Florale",
     notes: ["Rose", "Pivoine", "Musc"],
     burnTime: "45h",
@@ -164,7 +149,7 @@ export const products: Product[] = [
     description:
       "L’essence du néroli marocain dans un pot en céramique blanche. Lumineux comme un matin d’été.",
     price: 125,
-    image: fleur,
+    image: "/candle-fleur.jpg",
     collection: "Florale",
     notes: ["Néroli", "Bergamote", "Jasmin"],
     burnTime: "40h",
@@ -177,7 +162,7 @@ export const products: Product[] = [
     description:
       "Cannelle, anis étoilé et miel d’oranger. Une bougie réconfortante en pot rustique.",
     price: 115,
-    image: epices,
+    image: "/candle-epices.jpg",
     collection: "Signature",
     notes: ["Cannelle", "Miel", "Anis"],
     burnTime: "40h",
@@ -190,7 +175,7 @@ export const products: Product[] = [
     description:
       "Une bouffée de fraîcheur botanique pour purifier votre intérieur.",
     price: 110,
-    image: eucalyptus,
+    image: "/candle-eucalyptus.jpg",
     collection: "Signature",
     notes: ["Eucalyptus", "Menthe", "Cèdre"],
     burnTime: "35h",
@@ -203,7 +188,7 @@ export const products: Product[] = [
     description:
       "Le bois d’oud précieux rencontre l’ambre. Une signature inoubliable en pot foncé.",
     price: 160,
-    image: oud,
+    image: "/candle-oud.jpg",
     collection: "Signature",
     notes: ["Oud", "Ambre noir", "Patchouli"],
     burnTime: "45h",

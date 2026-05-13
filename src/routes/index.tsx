@@ -1,7 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Flame, Leaf, Sparkles, Truck } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
-import atelierImg from "@/assets/atelier.jpg";
 import { ProductCard } from "@/components/site/ProductCard";
 import { products } from "@/lib/products";
 import { motion } from "motion/react";
@@ -29,7 +27,7 @@ function Home() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
-            src={heroImg}
+            src="/hero.jpg"
             alt="Bougies Zakia"
             width={1600}
             height={1200}
@@ -150,7 +148,7 @@ function Home() {
           >
             <div className="absolute inset-0 bg-terracotta/20 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <img
-              src={atelierImg}
+              src="/atelier.jpg"
               alt="L’atelier Zakia Candles"
               loading="lazy"
               width={1200}

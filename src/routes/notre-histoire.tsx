@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import atelier from "@/assets/atelier.jpg";
 
 export const Route = createFileRoute("/notre-histoire")({
   component: Histoire,
@@ -37,7 +36,7 @@ function Histoire() {
         </div>
         <div className="overflow-hidden rounded-3xl shadow-soft">
           <img
-            src={atelier}
+            src="/atelier.jpg"
             alt="Atelier Zakia Candles"
             width={1200}
             height={900}
