@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Flame, Leaf, Sparkles, Truck } from "lucide-react";
-import heroImg from "../assets/hero.jpg";
-import atelierImg from "../assets/atelier.jpg";
+import heroImg from "@/assets/hero.jpg";
+import atelierImg from "@/assets/atelier.jpg";
 import { ProductCard } from "@/components/site/ProductCard";
 import { products } from "@/lib/products";
 import { motion } from "motion/react";

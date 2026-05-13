@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import atelier from "../assets/atelier.jpg";
+import atelier from "@/assets/atelier.jpg";
 
 export const Route = createFileRoute("/notre-histoire")({
   component: Histoire,

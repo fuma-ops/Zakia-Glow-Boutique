@@ -1,17 +1,17 @@
-import vanille from "../assets/candle-vanille.jpg";
-import rose from "../assets/candle-rose.jpg";
-import eucalyptus from "../assets/candle-eucalyptus.jpg";
-import oud from "../assets/candle-oud.jpg";
-import fleur from "../assets/candle-fleur.jpg";
-import epices from "../assets/candle-epices.jpg";
-import ribbedCream from "../assets/candle-ribbed-cream.jpg";
-import twistPink from "../assets/candle-twist-pink.jpg";
-import bubbleSage from "../assets/candle-bubble-sage.jpg";
-import shellIvory from "../assets/candle-shell-ivory.jpg";
-import bunnyWhite from "../assets/candle-bunny-white.jpg";
-import knotTerracotta from "../assets/candle-knot-terracotta.jpg";
-import roseNude from "../assets/candle-rose-nude.jpg";
-import waveMauve from "../assets/candle-wave-mauve.jpg";
+import vanille from "@/assets/candle-vanille.jpg";
+import rose from "@/assets/candle-rose.jpg";
+import eucalyptus from "@/assets/candle-eucalyptus.jpg";
+import oud from "@/assets/candle-oud.jpg";
+import fleur from "@/assets/candle-fleur.jpg";
+import epices from "@/assets/candle-epices.jpg";
+import ribbedCream from "@/assets/candle-ribbed-cream.jpg";
+import twistPink from "@/assets/candle-twist-pink.jpg";
+import bubbleSage from "@/assets/candle-bubble-sage.jpg";
+import shellIvory from "@/assets/candle-shell-ivory.jpg";
+import bunnyWhite from "@/assets/candle-bunny-white.jpg";
+import knotTerracotta from "@/assets/candle-knot-terracotta.jpg";
+import roseNude from "@/assets/candle-rose-nude.jpg";
+import waveMauve from "@/assets/candle-wave-mauve.jpg";
 
 export type Product = {
   id: string;
