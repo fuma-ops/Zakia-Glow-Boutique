@@ -4,11 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
-
-import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -68,33 +64,6 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Zakia Candles — Bougies artisanales du Maroc" },
-      {
-        name: "description",
-        content:
-          "Bougies artisanales coulées à la main au Maroc. Cire de soja naturelle, parfums d’exception. Livraison dans tout le royaume.",
-      },
-      { name: "author", content: "Zakia Candles" },
-      { property: "og:title", content: "Zakia Candles — Bougies artisanales du Maroc" },
-      {
-        property: "og:description",
-        content: "Bougies artisanales coulées à la main au Maroc.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-  }),
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,

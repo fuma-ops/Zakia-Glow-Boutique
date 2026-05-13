@@ -6,16 +6,6 @@ import { motion } from "motion/react";
 
 export const Route = createFileRoute("/")({
   component: Home,
-  head: () => ({
-    meta: [
-      { title: "Zakia Candles — Bougies artisanales du Maroc" },
-      {
-        name: "description",
-        content:
-          "Découvrez nos bougies parfumées artisanales coulées à la main à Casablanca. Cire de soja, parfums d’exception, livraison dans tout le Maroc.",
-      },
-    ],
-  }),
 });
 
 function Home() {
