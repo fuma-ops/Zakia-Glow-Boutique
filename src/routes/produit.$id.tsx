@@ -56,6 +56,7 @@ function ProductPage() {
             alt={product.name}
             width={800}
             height={1000}
+            referrerPolicy="no-referrer"
             className="aspect-[4/5] w-full object-cover"
           />
         </div>

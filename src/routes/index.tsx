@@ -21,6 +21,7 @@ function Home() {
             alt="Bougies Zakia"
             width={1600}
             height={1200}
+            referrerPolicy="no-referrer"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-hero" />
@@ -143,6 +144,7 @@ function Home() {
               loading="lazy"
               width={1200}
               height={900}
+              referrerPolicy="no-referrer"
               className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
           </motion.div>

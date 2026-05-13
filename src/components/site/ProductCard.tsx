@@ -18,6 +18,7 @@ export function ProductCard({ product }: { product: Product }) {
           src={product.image}
           alt={product.name}
           loading="lazy"
+          referrerPolicy="no-referrer"
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <span className="absolute left-3 top-3 rounded-full bg-background/90 px-3 py-1 text-[10px] font-medium uppercase tracking-widest text-foreground/80 backdrop-blur">

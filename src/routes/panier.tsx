@@ -153,7 +153,12 @@ function Panier() {
                     params={{ id: product.id }}
                     className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-xl bg-secondary sm:h-28 sm:w-28"
                   >
-                    <img src={product.image} alt={product.name} className="h-full w-full object-cover" />
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      referrerPolicy="no-referrer"
+                      className="h-full w-full object-cover"
+                    />
                   </Link>
                   <div className="flex flex-1 flex-col">
                     <div className="flex items-start justify-between gap-2">
