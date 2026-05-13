@@ -16,18 +16,18 @@ function Home() {
       {/* Hero */}
       <section className="relative isolate min-h-[90vh] overflow-hidden bg-background flex items-center">
         {/* Refined merged background: Image on the right, blending into the left */}
-        <div className="absolute inset-y-0 right-0 w-full lg:w-[65%] z-0">
+        <div className="absolute inset-y-0 right-0 w-full md:w-[65%] z-0">
           <img
             src="/candle-epices.jpg"
             alt="Bougie Miel & Épices"
             referrerPolicy="no-referrer"
-            className="h-full w-full object-cover object-[center_20%] lg:object-center transition-all duration-1000"
+            className="h-full w-full object-cover object-[center_20%] md:object-center transition-all duration-1000"
           />
           {/* Gradients for smooth merge into the text area */}
-          <div className="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-full lg:w-1/4 bg-gradient-to-l from-ink/10 to-transparent pointer-events-none" />
+          <div className="absolute inset-y-0 left-0 w-full md:w-1/2 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-full md:w-1/4 bg-gradient-to-l from-ink/10 to-transparent pointer-events-none" />
           {/* Mobile bottom-up gradient */}
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/20 to-transparent lg:hidden z-10" />
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/20 to-transparent md:hidden z-10" />
         </div>
 
         <div className="relative z-20 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-10">
@@ -35,9 +35,9 @@ function Home() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-2xl"
+            className="max-w-2xl mx-auto md:mx-0"
           >
-            <div className="space-y-6">
+            <div className="space-y-6 flex flex-col items-center text-center md:items-start md:text-left">
               <motion.span 
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ function Home() {
                 Bougies parfumées coulées à la main au Maroc, dans des contenants choisis avec amour. Cire de soja naturelle, mèches en coton, parfums d’exception.
               </p>
               
-              <div className="flex flex-wrap items-center gap-5 pt-4">
+              <div className="flex flex-wrap justify-center items-center gap-5 pt-4 md:justify-start">
                 <Link
                   to="/boutique"
                   className="group relative inline-flex items-center gap-2 rounded-full bg-terracotta-deep px-10 py-5 text-sm font-semibold text-white shadow-xl shadow-terracotta/20 transition-all hover:bg-terracotta hover:shadow-terracotta/30 active:scale-95 overflow-hidden"
@@ -110,7 +110,7 @@ function Home() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-wrap items-end justify-between gap-4"
+          className="flex flex-col items-center text-center lg:flex-row lg:items-end lg:justify-between lg:text-left gap-4"
         >
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-terracotta glow-text">Nos coups de cœur</p>
@@ -168,17 +168,18 @@ function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col items-center text-center md:items-start md:text-left"
           >
             <p className="inline-flex items-center gap-2 rounded-full border border-terracotta/30 bg-background/50 px-3 py-1 text-xs uppercase tracking-[0.3em] text-terracotta backdrop-blur shadow-[0_0_10px_rgba(200,100,50,0.1)] mb-4">L’atelier</p>
             <h2 className="mt-2 font-display text-4xl text-ink sm:text-5xl">
               Petite marque, grandes attentions.
             </h2>
-            <p className="mt-5 text-foreground/80 leading-relaxed">
+            <p className="mt-5 text-foreground/80 leading-relaxed max-w-md md:max-w-none">
               Zakia Candles est née d’une passion familiale pour les rituels parfumés. Chaque
               bougie est coulée en petite série dans notre atelier à Casablanca, avec des
               ingrédients soigneusement sélectionnés.
             </p>
-            <p className="mt-3 text-foreground/80 leading-relaxed">
+            <p className="mt-3 text-foreground/80 leading-relaxed max-w-md md:max-w-none">
               Nous croyons aux gestes lents, aux objets qui durent, et à la beauté de l’imparfait.
             </p>
             <Link
