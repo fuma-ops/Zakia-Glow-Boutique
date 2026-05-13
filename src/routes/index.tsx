@@ -14,49 +14,49 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+      <section className="relative isolate min-h-[85vh] overflow-hidden flex items-center">
+        {/* Full-width merged background */}
+        <div className="absolute inset-0 z-0">
           <img
-            src="/hero.jpg"
-            alt="Bougies Zakia"
-            width={1600}
-            height={1200}
+            src="/candle-epices.jpg"
+            alt="Bougie Miel & Épices"
             referrerPolicy="no-referrer"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center lg:object-[65%_center]"
           />
-          <div className="absolute inset-0 bg-gradient-hero" />
+          {/* Advanced gradient for merging and readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent lg:via-background/40" />
+          <div className="absolute inset-0 bg-ink/10 mix-blend-multiply" />
         </div>
 
-        <div className="mx-auto grid max-w-7xl items-end gap-10 px-4 pb-16 pt-28 sm:px-6 lg:px-10 lg:pb-24 lg:pt-40">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-10">
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-2xl"
+            className="max-w-xl"
           >
-            <span className="inline-flex items-center gap-2 rounded-full border border-terracotta/30 bg-background/70 px-3 py-1 text-xs uppercase tracking-[0.25em] text-terracotta backdrop-blur shadow-[0_0_10px_rgba(255,160,122,0.2)]">
-              <Sparkles className="h-3 w-3 text-gold" /> Nouvelle collection
+            <span className="inline-flex items-center gap-2 rounded-full border border-terracotta/30 bg-background/80 px-3 py-1 text-xs uppercase tracking-[0.25em] text-terracotta backdrop-blur shadow-[0_0_15px_rgba(255,160,122,0.3)]">
+              <Sparkles className="h-3 w-3 text-gold" /> Miel & Épices
             </span>
-            <h1 className="mt-5 text-balance font-display text-5xl leading-[1.05] text-ink sm:text-6xl lg:text-7xl">
-              La lumière douce <em className="text-terracotta-deep glow-text">d’un instant</em> à soi.
+            <h1 className="mt-5 text-balance font-display text-5xl leading-[1.05] text-ink drop-shadow-sm sm:text-6xl lg:text-7xl">
+              Chaleur <em className="text-terracotta-deep glow-text italic">orientale</em> <br/> pour vos soirées.
             </h1>
-            <p className="mt-6 max-w-xl text-balance text-base text-foreground/75 sm:text-lg">
-              Bougies parfumées coulées à la main au Maroc, dans des contenants choisis avec amour.
-              Cire de soja naturelle, mèches en coton, parfums d’exception.
+            <p className="mt-6 max-w-lg text-balance text-base font-medium text-ink/90 drop-shadow-sm sm:text-xl leading-relaxed">
+              Plongez dans l'univers envoûtant de notre bougie signature. Cannelle, anis étoilé et miel d’oranger pour une ambiance réconfortante.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
-                to="/boutique"
-                className="group relative inline-flex items-center gap-2 rounded-full bg-terracotta-deep px-8 py-4 text-sm font-medium text-primary-foreground transition-all hover:bg-terracotta glow-box overflow-hidden"
+                to="/produit/miel-epices"
+                className="group relative inline-flex items-center gap-2 rounded-full bg-terracotta-deep px-8 py-4 text-sm font-medium text-white transition-all hover:bg-terracotta glow-box overflow-hidden"
               >
                 <div className="absolute inset-0 z-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out rounded-full" />
-                <span className="z-10 relative flex items-center gap-2">Découvrir la boutique <ArrowRight className="h-4 w-4" /></span>
+                <span className="z-10 relative flex items-center gap-2">Acheter maintenant <ArrowRight className="h-4 w-4" /></span>
               </Link>
               <Link
-                to="/notre-histoire"
-                className="inline-flex items-center gap-2 rounded-full border border-foreground/30 bg-background/50 px-8 py-4 text-sm font-medium backdrop-blur transition-all hover:bg-background hover:shadow-[0_0_15px_rgba(200,200,200,0.3)]"
+                to="/boutique"
+                className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-background/60 px-8 py-4 text-sm font-medium backdrop-blur transition-all hover:bg-white hover:text-ink hover:shadow-[0_0_20px_rgba(0,0,0,0.1)]"
               >
-                Notre histoire
+                Tout découvrir
               </Link>
             </div>
           </motion.div>
